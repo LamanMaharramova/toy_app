@@ -6,15 +6,15 @@ ruby '2.5.5'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.2', '>= 6.0.2.2'
 # Use sqlite3 as the database for Active Record
-gem 'sequel'
+#gem 'sequel'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use postgresql as the database for Active Record
-#gem 'pg', '>= 0.18', '< 2.0'
+gem 'pg', '>= 0.18', '< 2.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
-#gem 'webpacker', '~> 4.0'
+gem 'webpacker', '~> 4.0'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -53,7 +53,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'blueauth', '1.0.2'
 gem 'rack-cors'
 gem 'jwt_sessions'
+gem 'sequel'
 
-group :production do
-  gem 'pg', '>= 0.18', '< 2.0'
-end
+#group :production do
+ # gem 'pg', '>= 0.18', '< 2.0'
+#end
